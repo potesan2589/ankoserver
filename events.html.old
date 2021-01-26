@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>イベント - あんこさーばー</title>
+    <style>
+      td{padding: .4em}
+    </style>
+    <link rel="stylesheet" href="/css/index.css" />
+    <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      function SetIFrameHeight(ele) {
+        ele.style.height = ele.contentWindow.document.documentElement.scrollHeight + "px";
+        setTimeout(()=>SetIFrameHeight(ele), 1500);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="field">
+      <header id="up">
+        <h1>使いやすい。誰もがそう思うサーバーに。</h1>
+        <p style="text-align:right">from あんこさーばー</p>
+      </header>
+      <div class="main_field">
+        <div id="side">
+          <iframe src="/side.html" scrolling="no" frameborder="no" style="width:100%;border:red 0px solid;" border="0" onload="SetIFrameHeight(this)"></iframe>
+        </div>
+        <main id="main">
+          <h1>イベント開催</h1>
+          <h2>クリスマスの宴 ~愉快適悦のギィィィィ！！~</h2>
+          <table>
+            <tr>
+              <th>日にち</th><th>やる事</th><th>補足</th>
+            </tr>
+            <tr>
+              <td>12月26日</td><td>nitro抽選</td><td>基本誰でも参加出来る予定</td>
+            </tr>
+            <tr>
+            <td>同</td><td>人狼</td><td></td>
+            </tr>
+            <tr>
+            <td>同</td><td>ライブ配信</td><td>何をやるか教えてくれると助かる</td>
+          </tr>
+          <tr>
+          <td>同</td><td>あんこは何餡が良いか論争</td><td>永遠のライバルだしね（笑）</td>
+          </tr>
+          </table>
+          <p>時間などはまだ未定</p>
+          </main>
+        <div class="anko"></div>
+      </div>
+      <footer id="footer">
+        <h2>このサーバーに入りたい！</h2><br />
+        <div style="text-align:center">
+          <a href="https://discord.gg/TexxWCj">
+            <span id="join-button">
+              サーバー入口
+            </span>
+          </a>
+        </div> </footer>
+    </div><br /><br />&nbsp;
+  </body>
+</html>

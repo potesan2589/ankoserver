@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a target="_top" href="/">HOME</a></li>
+      <li><a target="_top" href="/rules">RULE</a></li>
+      <li><a target="_top" href="/commands">Command List</a></li>
+      <li><a target="_top" href="/events">Events</a></li>
+      <li><a target="_top" data-href="/timeline">Timeline (On the Job)</a></li>
+      <li><a target="_top" href="https://discord.gg/TexxWCj">Server Invitation</a></li>
+    </ul>
+  </body>
+</html>

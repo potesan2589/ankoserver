@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>コマンド - あんこさーばー</title>
+    <script type="text/javascript">
+      function SetIFrameHeight(ele) {
+        ele.style.height = ele.contentWindow.document.documentElement.scrollHeight + "px";
+        setTimeout(()=>SetIFrameHeight(ele), 1500);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="field">
+      <header id="up">
+        <h1>使いやすい。誰もがそう思うサーバーに。</h1>
+        <p style="text-align:right">from あんこさーばー</p>
+      </header>
+      <div class="main_field">
+        <div id="side">
+          <iframe src="/side.html" scrolling="no" frameborder="no" style="width:100%;border:red 0px solid;" border="0" onload="SetIFrameHeight(this)"></iframe>
+        </div>
+        <main id="main">
+          <h1>あんこさーばーに居るbotコマンド索引</h1>
+          <h2>役職パネルbotV2(!rp2)</h2>
+          <a href="https://kesigomon.hatenablog.jp/entry/2020/05/19/203644">公式コマンド一覧</a>
+          <h3>add</h3>
+          <p>パネルを追加します。</p>
+          <ul>
+          <li>権限X(例)</li>
+          <p>指定した権限をパネルに追加します。</p>
+          <li>--tag</li>
+          <p>パネルにタイトル（タグ）が設定される。（設定しないとデフォルトと言うタイトル（タグ）になる）</p>
+          <li>--channel</li>
+          <p>パネルを設置するチャンネルを指定する</p>
+          <li>--emoji</li>
+          <p>権限付与する為のリアクション絵文字の指定をする。</p>
+          <li>--create</li>
+          <p>役職を作ってからパネルを作る</p>
+          <li>--color</li>
+          <p>パネルの色を指定する</p>
+          </ul>
+          <h3>remove</h3>
+          <p>パネルから役職を削除します。</p>
+          <ul>
+            <li>権限X(例)</li>
+            <p>その権限をパネルから削除します</p>
+            <li>--tag</li>
+            <p>指定のタイトル（タグ）から役職を削除します</p>
+            <li>--channel</li>
+            <p>削除するチャンネルをします</p>
+            <li>--delete</li>
+            <p>パネルから役職を削除した後にその役職も削除されます。</p>
+          </ul>
+          <h3>autoremove</h3>
+          <p>パネル内のもう無い役職を削除します。</p>
+          <h3>edit</h3>
+          <p>パネルを編集します。</p>
+          <ul>
+            <li>メッセージid</li>
+            <p>編集するパネルのメッセージidを指定する</p>
+            <li>--tag</li>
+            <p>タイトル（タグ）の別のものに変更します</p>
+            <li>--color</li>
+            <p>パネルを別の色に変更します</p>
+            <li>--channel</li>
+            <p>編集するパネルのチャンネルを指定します</p>
+          </ul>
+          <h3>role</h3>
+          <p>ロール一覧をロールidと共に表示します</p>
+          <ul>
+            <li>ページ2(例)</li>
+            <p>役職一覧のページを指定する</p>
+          </ul>
+          <h3>find</h3>
+          <p>パネルを検索してあった場合そのメッセージidを返します。</p>
+          <ul>
+            <li>タグX(例)</li>
+            <p>検索したいパネルのタイトル（パネル）を指定する</p>
+            <li>ページ</li>
+            <p>検索したいパネルのページを指定する</p>
+            <li>--channel</li>
+            <p>検索したいパネルのチャンネルを指定できる</p>
+          <p>指定しなかった場合、コマンドを打ったチャンネルと同じになる</p>
+          </ul>
+          <h3>refresh</h3>
+          <p>パネルのリアクションを付けなおす</p>
+          <ul>
+            <li>メッセージid</li>
+            <p>リアクションを付けなおすパネルを指定する</p>
+            <li>--channel</li>
+            <p>リアクションを付けなおすチャンネルを指定する</p>
+          </ul>
+          <h3>sort</h3>
+          <p>パネルのリアクションをアルファベット順に並べる事が出来る</p>
+          <ul>
+            <li>メッセージid</li>
+            <p>アルファベット順に並べるパネルを指定する</p>
+            <li>--channel</li>
+            <p>アルファベット順に並べるチャンネルを指定する</p>
+          </ul>
+          <h3>copy</h3>
+          <p>パネルを複製する事が出来る</p>
+          <ul>
+            <li>メッセージid</li>
+            <p>複製元のパネルを指定する</p>
+            <li>--from</li>
+            <p>複製元のチャンネルを指定する</p>
+            <li>--channel</li>
+            <p>複製先のチャンネルを指定する</p>
+          </ul>
+          <h3>reset</h3>
+          <blockquote>autoremove、sort、refreshを一気に行います。
+          以下の順番で行われます。
+          →存在しない役職の行を削除（autoremove)
+          →アルファベットの絵文字はアルファベット順に編集（sort）
+          →リアクションの付け直し（refresh）</blockquote>
+          <ul>
+            <li>メッセージid</li>
+            <p>それを行うパネルを指定する</p>
+            <li>--channel</li>
+            <p>それを行うチャンネルを指定する</p>
+          </ul>
+
+        <!--  <h2>carlbot(?)</h2>
+          <a href="https://carl.gg/">公式サイト</a>
+          <h3>数が多いので一部省略させて頂きます。</h3>
+          <h3>編集中</h3>
+          <h3>動物の画像を出す</h3>
+          <ul>
+            <li>cat</li>
+            <p>猫の画像を出す</p>
+            <li>dog</li>
+            <p>犬の画像を出す</p>
+            <li>aww</li>
+            <p>複数の動物の画像が出る</p>
+          </ul>
+
+          <h2>結月(#.)</h2>
+          <a href="https://yudzuki.aoichaan0513.jp/">公式webページ</a>
+          <h3>about</h3>
+          <p>botの情報が書かれております</p>
+          <h3>help</h3>
+          <p>コマンド一覧が書かれております。</p>
+          <h3>ping</h3>
+          <p>ping値が見れます</p>
+          <h3>status</h3>
+          <p>botサーバーの状況が見れたり</p>
+          <h3>follow</h3>
+          <p>サポートサーバーからのお知らせが受け取れます</p>
+          <h3>usersettings</h3>
+          <p>言語などの設定が出来ます</p>
+          <h3>server</h3>
+          <p>サーバーの情報が見れる</p>
+          <h3>channel</h3>
+          <p>そのチャンネルの権限が見れる</p>
+          <h3>role</h3>
+          <p>ロール情報が見れる</p>
+          <h3>emoji (絵文字)</h3>
+          <p>絵文字の情報が見れる</p>
+          <h3>user</h3>
+          <p>自分の情報が見れる</p>
+          <h3>invite</h3>
+          <p>結月botの招待リンクが送信される</p>
+          <h3>check</h3>
+          <p>クローバルBANなどされたか見れる</p>
+          <h3>lookup</h3>
+          <p>名前変更の履歴が見れる</p>
+          <h3>channelcopy</h3>
+          <p>チャンネルを複製する</p>
+          <h3>rolecopy</h3>
+          <p>ロールをコピーする</p>
+          <h3>clear</h3>
+          <p>指定した数だけメッセージを削除する</p>
+          <h3>mute</h3>
+          <p>相手をミュートする</p>
+          <h3>unmute</h3>
+          <p>相手のミュートを解除する</p>
+          <h3>kick</h3>
+          <p>相手をサーバーからキックする</p>
+          <h3>localban</h3>
+          <p>このサーバーからBANする</p>
+          <h3>globalban</h3>
+          <p>クローバルBANをする</p>
+          <h3>ungban</h3>
+          <p>クローバルBANを解除する</p>
+
+        -->‎
+
+          <h2>ProBOT(#)</h2>
+          <a href="https://probot.io">公式webページ</a>
+          <h3>moveme</h3>
+          <p>ボイスチャンネルに移動する</p>
+          <h3>profile</h3>
+          <p>プロフィールカードを表示する</p>
+          <h3>rank</h3>
+          <p>ランクカードを表示する</p>
+          <h3>rep</h3>
+          <p>相手に評判ポイントを与える</p>
+          <h3>top</h3>
+          <p>最も多くのサーバースコアを持ったメンバーを表示する</p>
+          <h3>user</h3>
+          <p>ユーザー情報を表示する</p>
+          <h3>avater</h3>
+          <p>ユーザーのアイコン画像を表示する</p>
+          <h3>server</h3>
+          <p>サーバーに関する情報を表示する</p>
+          <h3>credits</h3>
+          <p>残高を表示する</p>
+          <h3>title</h3>
+          <p>プロフィールカードの題名を変える</p>
+          <h3>setnick</h3>
+          <p>ニックネームを変える</p>
+          <h3>ban</h3>
+          <p>メンバーをBANする</p>
+          <h3>unban</h3>
+          <p>メンバーのBANを解除する</p>
+          <h3>kick</h3>
+          <p>メンバーをキックする</p>
+          <h3>vkick</h3>
+          <p>メンバーをボイスチャンネルからキックする</p>
+          <h3>mute</h3>
+          <p>メンバーをミュートする</p>
+          <h3>unmute</h3>
+          <p>メンバーのミュートを解除する</p>
+          <h3>vmute</h3>
+          <p>ボイスチャンネルでメンバーをミュートする</p>
+          <h3>unvmute</h3>
+          <p>ボイスチャンネルでのメンバーのミュートを解除する</p>
+          <h3>clear</h3>
+          <p>チャンネルのメッセージを削除する</p>
+          <h3>move</h3>
+          <p>メンバーをボイスチャンネルに移動する</p>
+          <h3>role</h3>
+          <p>メンバーにロールを付与します</p>
+          <h3>points</h3>
+          <p>サーバーのポイントの操作コマンド</p>
+          <h3>warn</h3>
+          <p>メンバーを警告する</p>
+          <h3>removewarn</h3>
+          <p>メンバーの警告を取り消す</p>
+          <h3>warnings</h3>
+          <p>警告を確認する</p>
+          <h3>lock</h3>
+          <p>特定のチャンネルの@everyoneを送信できなくする</p>
+          <h3>unlock</h3>
+          <p>特定のチャンネルの @everyone からのメッセージ送信を拒否します</p>
+          <h3>temp</h3>
+          <p>一時的なチャンネル</p>
+          <h3>reset</h3>
+          <p>ボイチャやテキストチャットのXPポイントを初期化する</p>
+          <h3>color</h3>
+          <p>ロールカラーを変更する</p>
+          <h3>colors</h3>
+          <p>利用可能な色を表示する</p>
+          <h3>setcolor</h3>
+          <p>ロールカラーを16進数で変更する</p>
+          <h3>short</h3>
+          <p>URLを短縮する</p>
+          <h3>roll</h3>
+          <p>サイコロを転がす</p>
+
+          <h2>TicketTool($)</h2>
+          <a href="https://TicketTool.xyz">公式webページ</a>
+          <h3>help</h3>
+          <p>ヘルプが表示されます</p>
+          <h3>debug</h3>
+          <p>権限設定が見れます</p>
+          <h3>permlevel</h3>
+          <p>独自の権限レベルが見れる</p>
+          <h3>ping</h3>
+          <p>ping値が見れます</p>
+
+
+<!--
+          <h2>顔文字で返してくるうざいBOT(e.)</h2>
+          <a href="https://emoticon-bot.tk">公式webページ</a>
+          <h3>help</h3>
+          <p>ヘルプが見れます</p>
+          <h3>aliases</h3>
+          <p>ヘルプ（上のやつよりは簡易的）なのが見れます</p>
+          <h3>about</h3>
+          <p>顔文字botの要領がみれます</p>
+          <h3>topic</h3>
+          <p>今日のトピックが見れます</p>
+          <h3>rank</h3>
+          <p>レベルが見れます</p>
+          <h3>money</h3>
+          <p>所持金が見れます</p>
+          <h3>rannking</h3>
+          <p>ランキングが見れます</p>
+          <h3>status</h3>
+          <p>顔文字botのステータスが見れます</p>
+          <h3>ping</h3>
+          <p>ping値が見れます</p>
+          <h3>emoji</h3>
+          <p>その絵文字の情報が見れます</p>
+          <h3>gazoji 例:あんこ</h3>
+          <p>テキストを画像にして送ります</p>
+          <h3>lookup</h3>
+          <p>指定したユーザーの情報を見る</p>
+          <h3>invite</h3>
+          <p>顔文字botの招待リンクが送信されます</p>
+          <h3>guild-setting</h3>
+          <p>このサーバーの情報が見れます</p>
+          <h3>del</h3>
+          <p>メッセージを一斉削除します</p>
+          <h3>yojijukugo</h3>
+          <p>四字熟語クイズを送信します</p>
+          <h3>uranai</h3>
+          <p>占いが出来ます</p>
+-->
+          <h2>DISBOARD(!d)</h2>
+          <a href="disboard.org">公式サイト</a>
+          <h3>help</h3>
+          <p>ヘルプが見れます</p>
+          <h3>bump</h3>
+          <p>公式サイト内で目立つためのbumpが出来ます。ご協力お願いします</p>
+
+          <h2>Hana🌸(/tel)</h2>
+          <a href="https://discord.gg/Q4VqGEwPNX">公式disordサーバー</a>
+          <h3>/tel</h3>
+          <p>読み上げの開始、終了をするコマンドです</p>
+
+          <h2>そうだよ(便乗)BOT</h2>
+          <a href="https://discord.gg/TBuhsEy">公式disordサーバー</a>
+          <h3>totuzen 例:あんこ</h3>
+          <p>突然の死</p>
+          <h3>heart メッセージid</h3>
+          <p>一つ前のメッセージか特定のメッセージにハートをいっぱい付けることが出来ます（自分のメッセージには出来ないゾ）</p>
+          <h3>rta ユーザーID</h3>
+          <p>そのユーザーのRTA記録が送信される(1分まで)</p>
+          <h3>ranking</h3>
+          <p>即抜けrta記録のランキング一覧</p>
+          <h3>set</h3>
+          <p>こ↑こ↓のサーバーの便乗設定とか見れるゾ</p>
+
+<!--
+          <h2>virtualCrypto(vc.)</h2>
+          <a href="https://github.com/virtualCrypto-discord/virtualCrypto/wiki">公式wiki</a>
+          <h3>me</h3>
+          <p>自分の通貨情報が見れる</p>
+          <h3>info</h3>
+          <p>通貨の情報が見れる</p>
+-->
+          <h2>Translator(-t)</h2>
+          <a href="https://nvu.io/ja/fu-shunobotuto/discord-fan-yi/">公式サイト</a>
+          <h3>-t {翻訳したい言語(ISO 639-1に則った書式)} {メッセージ}</h3>
+          <p>その翻訳したい言語にメッセージを翻訳出来る</p>
+
+          <h2>ディス速！</h2>
+          <a href="https://dissoku.net/">公式webサイト</a>
+          <h3>/dissoku up!</h3>
+          <p>bumpと同じような感じです</p>
+
+          <h2>GuildUtilsJ($)</h2>
+          <a href="https://guj.tignear.com/">公式webサイト</a>
+          <h3>help</h3>
+          <p>ヘルプが見れます</p>
+          <h3>invite</h3>
+          <p>招待リンクを送信します</p>
+          <h3>ping</h3>
+          <p>ping値が見れます</p>
+          <h3>stats</h3>
+          <p>botのステータスが見れます</p>
+          <h3>info</h3>
+          <p>botの説明が見れます</p>
+          <h3>add</h3>
+          <p>単語登録が出来ます</p>
+
+          <h2>Rythm(!)</h2>
+          <h3>Rythm2(<)</h3>
+          <a href="https://rythmbot.co/">公式webサイト</a>
+          <h3>play (p)</h3>
+          <p>曲を再生します</p>
+          <h3>playtop (pt)</h3>
+          <p>曲をキューを最初に追加します</p>
+          <h3>playskip (ps)</h3>
+          <p>今再生してる曲を飛ばして指定した曲を再生します</p>
+          <h3>nowplaying (np)</h3>
+          <p>今再生して曲を表示します</p>
+          <h3>skip (s)</h3>
+          <p>今流してる曲を飛ばします</p>
+          <h3>seek</h3>
+          <p>今流してる曲の指定した時間に飛びます</p>
+          <h3>pause</h3>
+          <p>今流してる曲を一時停止します</p>
+          <h3>resume (re)</h3>
+          <p>一時停止を解除します</p>
+          <h3>loop</h3>
+          <p>再生中の曲をループします（もう一度やると解除される）</p>
+          <h3>join</h3>
+          <p>botをこのコマンドを実行した入ってるボイスチャンネルに入れる</p>
+          <h3>disconnect (dc)</h3>
+          <p>ボイスチャンネルを退出します</p>
+          <h3>queue (q)</h3>
+          <p>キューを表示します</p>
+        </main>
+        <div class="anko"></div>
+      </div>
+      <footer id="footer">
+        <h2>このサーバーに入りたい！</h2><br />
+        <div style="text-align:center">
+          <a href="https://discord.gg/TexxWCj">
+            <span id="join-button">
+              サーバー入口
+            </span>
+          </a>
+        </div>
+       </footer>
+    </div>
+
+  </body>
+</html>                                                                                                                                                                                                                                                                                                                          

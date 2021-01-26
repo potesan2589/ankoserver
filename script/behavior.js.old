@@ -1,0 +1,10 @@
+let sideBarMode = s => s
+  ? (document.getElementById("side-bar").style.display = s)
+  : document.getElementById("side-bar").style.display;
+function toggleSideBar(){
+  if (sideBarMode() == "table-cell") {
+    sideBarMode("none");
+  } else {
+    sideBarMode("table-cell");
+  }
+}

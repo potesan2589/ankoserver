@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rules - Annko Server</title>
+    <link rel="icon" href="img/annko.png" />
+    <meta name="description" content="This is the official web page of the Discord server 'Annko Server'. 雑談やゲーム、作品発表の場など様々な事に是非。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("/css/index.css") screen and (min-width: 500px);
+      @import url("/css/mobile.css") screen and (max-width: 499px);
+    </style>
+    <!-- <script type="text/javascript"
+src="//code.typesquare.com/static/5b0e3c4aee6847bda5a036abac1e024a/typesquare.js"
+charset="utf-8" defer></script> -->
+  </head>
+  <body>
+    <span id="open-menu" onclick="toggleSideBar()">≡</span>
+    <header>
+      <div id="header-wrap">
+        <a href="/"><h1 id="server-name">Annko Server</h1></a>
+        <span id="sub-title">Seriously unserious</span>
+        <div id="search-box">
+          <form method="get" action="https://www.google.co.jp/search" target="_blank">
+            <input type="text" name="q" size="31" maxlength="255" />
+            <input type="submit" name="btng" value="search" />
+            <input type="hidden" name="hl" value="ja" />
+            <input type="hidden" name="sitesearch" value="annkoserver.com" />
+          </form>
+        </div>
+      </div>
+      <div class="jam"><h3 style="margin-bottom: 0px;">&nbsp;</h3></div>
+    </header>
+    <main>
+      <div style="display:table; width:100%;">
+        <div id="side-bar">
+          <p><a href="rules-en">Rules</a></p>
+          <p><a href="commands">Bot commands</a></p>
+          <p><a href="serlf">Moderators</a></p>
+          <p><a href="events">Events</a></p>
+          <p><a href="https://discord.gg/9DDaqpz2zy">Join the server!</a></p>
+        </div>
+        <div style="display:table-cell;">
+          <h2>Rules for this server</h2>
+          These rules apply to all services related to 'Annko Server'.
+          <h2>1. Use this server in accordance with the Discord Terms of Service, Community Guidelines, and Discord Partnership.</h2>
+          <a href="https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct">・Discord Partnership</a><br />
+          <a href="https://support.discord.com/hc/en-us/articles/360035969312-Community-Server-Guidelines">・Community Guidelines</a><br />
+          <a href="https://discord.com/terms">・Discord Terms of Service</a>
+
+          <h2>2. Advertising</h2>
+          <p>
+            You may promote other servers on this server. ( <span class="channel">#宣伝-promotion</span> channel )
+            We do have a 5 minute slow mode.<br />
+            The same user is allowed to advertise twice a day.<br />
+            If a user promotes more than that number of times in a day,
+            it will be considered a violation of the rules,
+            and the user will be given a <span class="mention">@❌1️⃣警告</span>
+            (which means <span class="mention">@❌1️⃣Attention</span>) and
+            banned from promoting while in that roll.<br />
+            and banned from advertising while that roll is on.
+          </p>
+
+          <h2>3. About this rule</h2>
+          <p>
+            These rules are secondary to the Discord Terms of Service,
+            and take precedence over the Discord Terms of Service,
+            Discord Community Guidelines, and Discord Partnership.<br />
+            These rules are subject to change without notice.
+          </p>
+
+          <h2>4. About New Members</h2>
+          <p>
+            If a new member agrees to these rules, they become an official member.
+            If you do not agree to the rules, please leave.
+          </p>
+
+          <p>
+            Failure to comply will result in <span class="mention">@❌1️⃣警告</span> role,
+            <span class="mention">@❌2️⃣警告</span> role, and punishments such as kicks and bans.
+          </p>
+
+          <p>
+            If you have a problem, please DM the Administration Committee.
+          </p>
+
+          <p style="text-align:right">
+            Author: Server Owner, あんこさん<br />
+            Transration: DeepL Translate
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-wrap">
+        <h3>Annko Server</h3>
+        <a href="https://twitter.com/annkoserver">Official twitter account</a>　
+        <a href="https://discord.gg/9DDaqpz2zy">'Annko Server' of Discord</a>
+        <p>You must not reprint the contents of this site without permission.</p>
+        <div style="text-align:right">&copy; 2020 あんこさん</div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      let sideBarStyle = document.getElementById("side-bar").style;
+      function toggleSideBar(){
+        [ document.body.style.overflow,
+        sideBarStyle.visibility,
+        sideBarStyle.left,
+        sideBarStyle.opacity ] =
+        sideBarStyle.opacity == "1" ?
+        ["","","",""] : ["hidden", "visible", "0", "1"];
+      }
+    </script>
+  </body>
+</html>

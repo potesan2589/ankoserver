@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ルール - あんこさーばー</title>
+    <style>
+      @import url("/css/index.css") screen and (min-width: 500px);
+      @import url("/css/mobile.css") screen and (max-width: 499px);
+      #main a{text-decoration:underline!important}
+    </style>
+    <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      ga('create', 'UA-0123456-1');
+      if (location.search.indexOf('referrer=') >= 0) {
+      var params = location.search.replace('?', '').split('&');
+      for (var i = 0; i < params.length; i++) {
+        var kv = params[i].split('=');
+        if (kv.length == 2 && kv[0] == 'referrer') {
+          ga('set', 'referrer', decodeURIComponent(kv[1]));
+          break;
+        }
+      }
+      }
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id="field">
+      <header id="up">
+        <h1>使いやすい。誰もがそう思うサーバーに。</h1>
+        <p style="text-align:right">from あんこさーばー</p>
+      </header>
+      <div class="main_field">
+      <!--  <div id="side">
+          <iframe src="/side.html" scrolling="no" frameborder="no" style="width:100%;border:red 0px solid;" border="0" onload="SetIFrameHeight(this)"></iframe>
+        </div> -->
+        <script type="text/javascript">
+          function SetIFrameHeight(ele) {
+            ele.style.height = ele.contentWindow.document.documentElement.scrollHeight + "px";
+            setTimeout(()=>SetIFrameHeight(ele), 1500);
+          }
+        </script>
+        <main id="main">
+          <p style="text-align:right;font-size:1.7em">
+            <a href="/rules-en">Click here for English Version</a>
+          </p>
+          <h1 style="text-align:center;">
+            <span style="position:relative;left:-0.5em;font-size:1.3em">「あんこさーばー」ルール</span>
+          </h1>
+          <h2>1 Discord利用規約・コミュニティガイドライン・パートナーシップに則ってのサーバー利用を行う事。</h2>
+          <a href="https://support.discord.com/hc/ja/articles/360024871991-Discord%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%83%E3%83%97%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84">・Discordパートナーシップ</a><br />
+          <a href="https://support.discord.com/hc/ja/articles/360035969312-%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">・コミュニティガイドライン</a><br />
+          <a href="https://discord.com/terms">・Discord利用規約</a>
+          <h2>2 「あんこさーばー」ルール、及びDiscord利用規約、Discordパートナーシップ、Discordコミュニティガイドラインの遵守を行う事。</h2>
+          <h2>3 フリーチャンネルについて</h2>
+          <p>
+            <span class="channel">#権限-authority</span>で、
+            <span class="mention">@フリーチャンネル作成・観覧</span>をもらうと、
+            <span class="channel">#チャンネル作成</span>で「通常フリーチャンネル」の作成が出来る。
+          </p>
+          <h2>4 宣伝について</h2>
+          <p>このサーバーは他サーバーの宣伝が行える。( #宣伝★ のチャンネル)</p>
+          <p>5分間の低速モードを設けているが、<br /> 1日2回まで同一ユーザーが宣伝を行う事を許可する。</p>
+          <p>1日にその数以上の宣伝行為はルール違反とみなし、<span class="mention">@❌1️⃣警告</span>の付与、及びそのロールが付いてる間の宣伝行為禁止とする。</p>
+          <h2>5 このルールについて</h2>
+          <p>
+            このルールはDiscord利用規約などの副次的なものとしての立ち位置であり
+            最も優先するのはDiscord利用規約、Discordコミュニティガイドライン、Discordパートナーシップとする。
+          </p>
+          <p>またこのルールは追加が行われる事もある。</p>
+          <h3>遵守が行えなかった場合は<span class="mention">@❌1️⃣警告</span>、 <span class="mention">@❌2️⃣警告</span>、及びキックやBANなどの刑罰を行う。</h3>
+          <p style="text-align:right">
+            作成: サーバーオーナー あんこさん
+          </p>
+        </main>
+        <div class="anko"></div>
+      </div>
+      <footer id="footer">
+        <h2>このサーバーに入りたい！</h2><br />
+        <div style="text-align:center">
+          <a href="https://discord.gg/TexxWCj">
+            <span id="join-button">
+              サーバー入口
+            </span>
+          </a>
+        </div> </footer>
+    </div><br /><br />&nbsp;
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html style="width:100%">
+  <head>
+    <style>
+    li {
+    	color: #FFFFFF;
+      word-break: break-all;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    </style>
+  </head>
+  <body style="width:100%;margin:0">
+    <ul>
+      <li><a target="_top" href="/mobile">HOME</a></li>
+      <li><a target="_top" href="/rules">RULE</a></li>
+      <li><a target="_top" href="/commands">Command List</a></li>
+      <li><a target="_top" href="/events">Events</a></li>
+      <li><a target="_top" data-href="/timeline">Timeline (工事中)</a></li>
+      <li><a target="_top" href="https://discord.gg/TexxWCj">Server Invitation</a></li>
+    </ul>
+    <script type="text/javascript">
+      function SetULWidth(ele) {
+        let padding = ele.clientWidth - parseInt(getComputedStyle(ele).width,10);
+        ele.style.width = ele.parentNode.clientWidth - padding + 'px';
+      }
+      onload = () => {
+        SetULWidth(document.getElementsByTagName("ul")[0]);
+      }
+    </script>
+  </body>
+</html>

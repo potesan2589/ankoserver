@@ -1,0 +1,33 @@
+    <style>
+      @font-face {
+        font-family: HuiFontP29;
+        src: url("/HuiFontP29.woff") format("woff"),
+        url("/HuiFontP29.ttf") format("truetype");
+        font-display: swap;
+      }
+      ul li h2 {
+       font-family: HuiFontP29;
+       font-size: 2.7em;
+       border-radius: .5em;
+       width: fit-content;
+       margin: auto;
+       transition: 1s all;
+       padding: 13px;
+      }
+      @media screen and (min-width: 500px){
+        ul li h2:hover {
+          transform: scale(1.08, 1.08);
+          background: linear-gradient(#f5f5f5, #e5e5e5);
+          box-shadow: 5px 5px 3px #000;
+          transition: 1s all;
+        }
+      }
+    </style>
+
+        <br /><div style="text-align:center;">
+        <img src="img/naidesuyo.webp" alt="ないです By あんこ" style="width:95%; max-width:430px;" />
+      </div>
+      <ul style="list-style:none; padding:0; text-align:center">
+        <li style="margin-bottom:1.6em;"><a href="/"><h2>ホームに戻る</h2></a></li>
+        <li style="margin-bottom:2em;"><a href="https://discord.gg/TexxWCj"><h2>サーバーに参加する</h2></a></li>
+      </ul>

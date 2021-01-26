@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+  <script type="text/javascript">
+    ga('create', 'UA-0123456-1');
+    if (location.search.indexOf('referrer=') >= 0) {
+    var params = location.search.replace('?', '').split('&');
+    for (var i = 0; i < params.length; i++) {
+      var kv = params[i].split('=');
+      if (kv.length == 2 && kv[0] == 'referrer') {
+        ga('set', 'referrer', decodeURIComponent(kv[1]));
+        break;
+      }
+    }
+    }
+    ga('send', 'pageview');
+  </script>
+  <title>あんこさーばー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/mobile.css" />
+  <!--<link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" type="text/css" />
+  <script type="text/javascript" id="cosymantecbfw_removeToolbar">
+  (function () {
+  var toolbarElement = {},
+    parent = {},
+    interval = 0,
+    retryCount = 0,
+    isRemoved = false;
+  if (window.location.protocol === 'file:') {
+    interval = window.setInterval(function () {
+      toolbarElement = document.getElementById('coFrameDiv');
+      if (toolbarElement) {
+        parent = toolbarElement.parentNode;
+        if (parent) {
+          parent.removeChild(toolbarElement);
+          isRemoved = true;
+          if (document.body && document.body.style) {
+            document.body.style.setProperty('margin-top', '0px', 'important');
+          }
+        }
+      }
+      retryCount += 1;
+      if (retryCount > 10 || isRemoved) {
+        window.clearInterval(interval);
+      }
+    }, 10);
+  }
+})();
+function toggleSideBar(){
+  let sideBar = document.getElementById("side");
+  if (sideBar.style.display == "block") {
+    sideBar.style.display = "none";
+  } else {
+    sideBar.style.display = "block";
+  }
+}
+</script>-->
+</head>
+<body>
+  <!--<script type="text/javascript" charset="utf-8" src="encount.js"></script>
+  <script type="text/javascript" charset="utf-8" src="1.17.46.js"></script>-->
+  <div id="field">
+    <header id="up">
+      <h1>使いやすい。誰もがそう思うサーバーに。</h1>
+      <p style="text-align:right">from あんこさーばー</p>
+    </header>
+    <div class="main_field">
+      <div id="side">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/rules">RULE</a></li>
+          <li><a href="/commands">Command List</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="tlblog.annkoserver.com">Timeline</a></li>
+          <li><a href="https://discord.gg/TexxWCj">Server Invitation</a></li>
+        </ul>
+      </div>
+      <main id="main">
+        <h2>どんなサーバー？</h2>
+        <img src="img/osyaberi.webp" alt="おしゃべり"/>
+        <p>discord上が舞台の雑談サーバー。</p>
+        <p>毎日多数の話題で盛り上がっていたりします。</p><br>
+        <h2>どんな事が出来るの？</h2>
+        <img src="img/sumaho.webp" alt="スマホを操作">
+        <h4>何時でも好きな時におしゃべり</h4>
+        <p>学校から帰宅した時、一人で寂しい時、嬉しい事を分かち合いたい時…<br>とかにこのサーバーでメッセージを送信してみよう。</p>
+        <p>きっと誰かが共に喜び、悲しみ、色々な感情を分かち合ったりしてくれるさ。</p>
+        <img src="img/kanzyou.webp" alt="色々な場面">
+        <h4>ちょっとした独り言</h4>
+        <p>個人的にちょっと言いたい事や、自慢したい事があればこのサーバーの<br>「フリーチャンネル」機能を使ってみよう。</p>
+        <p>時には鯖民が反応してくれたりと、ゆったりとメッセージを送信する環境が揃っております。</p>
+        <img src="img/nerenai.webp" alt="独り言">
+      </main>
+      <div class="anko"></div>
+    </div>
+    <footer id="footer">
+      <h2>このサーバーに入りたい！</h2><br>
+      <div style="text-align:center">
+        <a href="https://discord.gg/TexxWCj">
+          <span id="join-button">
+            サーバー入口
+          </span>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <br><br><br><br>
+</body>
+</html>

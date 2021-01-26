@@ -1,0 +1,25 @@
+          <p style="text-align:right;font-size:1.7em">
+            <a href="/rules-en">Click here for English Version</a>
+          </p>
+          <h1 style="text-align:center;">
+            <span class="pc-only" style="position:relative;left:-0.5em;font-size:1.3em">「あんこさーばー」ルール</span>
+          </h1>
+          <h2>1 Discord利用規約・コミュニティガイドライン・パートナーシップに則ってのサーバー利用を行う事。</h2>
+          <a href="https://support.discord.com/hc/ja/articles/360024871991-Discord%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%83%E3%83%97%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84">・Discordパートナーシップ</a><br />
+          <a href="https://support.discord.com/hc/ja/articles/360035969312-%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">・コミュニティガイドライン</a><br />
+          <a href="https://discord.com/terms">・Discord利用規約</a>
+          <h2>2 「あんこさーばー」ルール、及びDiscord利用規約、Discordパートナーシップ、Discordコミュニティガイドラインの遵守を行う事。</h2>
+          <h2>3 宣伝について</h2>
+          <p>このサーバーは他サーバーの宣伝が行える。( <span class="channel">#宣伝-promotion</span> のチャンネル)</p>
+          <p>5分間の低速モードを設けているが、<br /> 1日2回まで同一ユーザーが宣伝を行う事を許可する。</p>
+          <p>1日にその数以上の宣伝行為はルール違反とみなし、<span class="mention">@❌1️⃣警告</span>の付与、及びそのロールが付いてる間の宣伝行為禁止とする。</p>
+          <h2>4 このルールについて</h2>
+          <p>
+            このルールはDiscord利用規約などの副次的なものとしての立ち位置であり
+            最も優先するのはDiscord利用規約、Discordコミュニティガイドライン、Discordパートナーシップとする。
+          </p>
+          <p>またこのルールは追加が行われる事もある。</p>
+          <h3>遵守が行えなかった場合は<span class="mention">@❌1️⃣警告</span>、 <span class="mention">@❌2️⃣警告</span>、及びキックやBANなどの処分を行う。</h3>
+          <p style="text-align:right">
+            作成: サーバーオーナー あんこさん
+          </p>

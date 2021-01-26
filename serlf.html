@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>運営自己紹介 - あんこさーばー</title>
+    <link rel="icon" href="img/annko.png" />
+    <meta name="description" content="Discordサーバー「あんこさーばー」の公式webページです。雑談やゲーム、作品発表の場など様々な事に是非。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("/css/index.css") screen and (min-width: 500px);
+      @import url("/css/mobile.css") screen and (max-width: 499px);
+    </style>
+    <!-- <script type="text/javascript"
+src="//code.typesquare.com/static/5b0e3c4aee6847bda5a036abac1e024a/typesquare.js"
+charset="utf-8" defer></script> -->
+  </head>
+  <body>
+    <span id="open-menu" onclick="toggleSideBar()">≡</span>
+    <header>
+      <div id="header-wrap">
+        <a href="/"><h1 id="server-name">あんこさーばー</h1></a>
+        <span id="sub-title">真面目に不真面目。あんこさーばー</span>
+        <div id="search-box">
+          <form method="get" action="https://www.google.co.jp/search" target="_blank">
+            <input type="text" name="q" size="31" maxlength="255" />
+            <input type="submit" name="btng" value="検索" />
+            <input type="hidden" name="hl" value="ja" />
+            <input type="hidden" name="sitesearch" value="annkoserver.com" />
+          </form>
+        </div>
+      </div>
+      <div class="jam"><h3 style="margin-bottom: 0px;">&nbsp;</h3></div>
+    </header>
+    <main>
+      <div style="display:table; width:100%;">
+        <div id="side-bar">
+          <p><a href="rules">ルール</a></p>
+          <p><a href="commands">Botコマンド</a></p>
+          <p><a href="serlf">運営自己紹介(工事中)</a></p>
+          <p><a href="events">イベント予定</a></p>
+          <p><a href="https://discord.gg/9DDaqpz2zy">Discordサーバー</a></p>
+        </div>
+        <div style="display:table-cell;">
+          <h1>あんこさーばーの運営の自己紹介</h1>
+          <div id="annko">
+            <h2>名前 あんこさん</h2>
+            <h3>年齢 非公開</h3>
+            <h3>趣味 ゲームとか…pc関係</h3>
+            <h3>特技 そんな物は無い(全てコンプレックス）</h3>
+            <h3>欲しい物 お金 お金 お金<h3>
+            <h3>一言 このサーバーの主です。テンションおかしいので大体何でも付いてこれます。</h3>
+          </div>
+          <div id="nyu">
+            <h2>名前 入力中</h2>
+            <h3>年齢 14</h3>
+            <h3>趣味 ゲーム</h3>
+            <h3>特技 特技ってなんですか?</h3>
+            <h3>欲しい物 欲しい物をただでくれる権利</h3>
+            <h3>一言 Apex</h3>
+          </div>
+          <div id="ayu">
+            <h2>名前  █████████</h2>
+            <h3>年齢  非公開</h3>
+            <h3>趣味  画像編集、stormworks</h3>
+            <h3>特技 ［情報がありません］</h3>
+            <h3>欲しい物 高性能なPCと時間</h3>
+            <h3>一言 ストワやりましょう</h3>
+          </div>
+          <div id="csj">
+            <h2>名前 CSJSC++</h2>
+            <h3>年齢 NaN, null, nil, nul, None, undefined, Nothing のどれか</h3>
+            <h3>趣味 ゲーム、睡眠、プログラミング</h3>
+            <h3>欲しい物 Nullがほしい</h3>
+            <h3>特技 プログラミング</h3>
+            <h3>一言 わおーん</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-wrap">
+        <h3>あんこさーばー</h3>
+        <a href="https://twitter.com/annkoserver">公式（笑）Twitter</a>　
+        <a href="https://discord.gg/9DDaqpz2zy">Discordサーバー</a>
+        <p>このサイトのコンテンツの無断転載などはご遠慮下さい。リンクはフリーです。</p>
+        <div style="text-align:right">&copy; 2020 あんこさん</div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      let sideBarStyle = document.getElementById("side-bar").style;
+      function toggleSideBar(){
+        [ document.body.style.overflow,
+        sideBarStyle.visibility,
+        sideBarStyle.left,
+        sideBarStyle.opacity ] =
+        sideBarStyle.opacity == "1" ?
+        ["","","",""] : ["hidden", "visible", "0", "1"];
+      }
+    </script>
+  </body>
+</html>

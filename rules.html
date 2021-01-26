@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ルール - あんこさーばー</title>
+    <link rel="icon" href="img/annko.png" />
+    <meta name="description" content="Discordサーバー「あんこさーばー」の公式webページです。雑談やゲーム、作品発表の場など様々な事に是非。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("/css/index.css") screen and (min-width: 500px);
+      @import url("/css/mobile.css") screen and (max-width: 499px);
+    </style>
+    <!-- <script type="text/javascript"
+src="//code.typesquare.com/static/5b0e3c4aee6847bda5a036abac1e024a/typesquare.js"
+charset="utf-8" defer></script> -->
+  </head>
+  <body>
+    <span id="open-menu" onclick="toggleSideBar()">≡</span>
+    <header>
+      <div id="header-wrap">
+        <a href="/"><h1 id="server-name">あんこさーばー</h1></a>
+        <span id="sub-title">真面目に不真面目。あんこさーばー</span>
+        <div id="search-box">
+          <form method="get" action="https://www.google.co.jp/search" target="_blank">
+            <input type="text" name="q" size="31" maxlength="255" />
+            <input type="submit" name="btng" value="検索" />
+            <input type="hidden" name="hl" value="ja" />
+            <input type="hidden" name="sitesearch" value="annkoserver.com" />
+          </form>
+        </div>
+      </div>
+      <div class="jam"><h3 style="margin-bottom: 0px;">&nbsp;</h3></div>
+    </header>
+    <main>
+      <div style="display:table; width:100%;">
+        <div id="side-bar">
+          <p><a href="rules">ルール</a></p>
+          <p><a href="commands">Botコマンド</a></p>
+          <p><a href="serlf">運営自己紹介(工事中)</a></p>
+          <p><a href="events">イベント予定</a></p>
+          <p><a href="https://discord.gg/9DDaqpz2zy">Discordサーバー</a></p>
+        </div>
+        <div id="main-content" style="display:table-cell;">
+          <p style="text-align:right;font-size:1.7em">
+            <a href="/rules-en">Click here for English Version</a>
+          </p>
+          <h1 style="text-align:center;">
+            <span class="pc-only" style="position:relative;left:-0.5em;font-size:1.3em">「あんこさーばー」ルール</span>
+          </h1>
+          <h2>1 Discord利用規約・コミュニティガイドライン・パートナーシップに則ってのサーバー利用を行う事。</h2>
+          <a href="https://support.discord.com/hc/ja/articles/360024871991-Discord%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%83%E3%83%97%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84">・Discordパートナーシップ</a><br />
+          <a href="https://support.discord.com/hc/ja/articles/360035969312-%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">・コミュニティガイドライン</a><br />
+          <a href="https://discord.com/terms">・Discord利用規約</a>
+          <h2>2 「あんこさーばー」ルール、及びDiscord利用規約、Discordパートナーシップ、Discordコミュニティガイドラインの遵守を行う事。</h2>
+          <h2>3 宣伝について</h2>
+          <p>このサーバーは他サーバーの宣伝が行える。( <span class="channel">#宣伝-promotion</span> のチャンネル)</p>
+          <p>5分間の低速モードを設けているが、<br /> 1日2回まで同一ユーザーが宣伝を行う事を許可する。</p>
+          <p>1日にその数以上の宣伝行為はルール違反とみなし、<span class="mention">@❌1️⃣警告</span>の付与、及びそのロールが付いてる間の宣伝行為禁止とする。</p>
+          <h2>4 このルールについて</h2>
+          <p>
+            このルールはDiscord利用規約などの副次的なものとしての立ち位置であり
+            最も優先するのはDiscord利用規約、Discordコミュニティガイドライン、Discordパートナーシップとする。
+          </p>
+          <p>またこのルールは追加が行われる事もある。</p>
+          <h3>遵守が行えなかった場合は<span class="mention">@❌1️⃣警告</span>、 <span class="mention">@❌2️⃣警告</span>、及びキックやBANなどの処分を行う。</h3>
+          <p style="text-align:right">
+            作成: サーバーオーナー あんこさん
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-wrap">
+        <h3>あんこさーばー</h3>
+        <a href="https://twitter.com/annkoserver">公式（笑）Twitter</a>　
+        <a href="https://discord.gg/9DDaqpz2zy">Discordサーバー</a>
+        <p>このサイトのコンテンツの無断転載などはご遠慮下さい。リンクはフリーです。</p>
+        <div style="text-align:right">&copy; 2020 あんこさん</div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      let sideBarStyle = document.getElementById("side-bar").style;
+      function toggleSideBar(){
+        [ document.body.style.overflow,
+        sideBarStyle.visibility,
+        sideBarStyle.left,
+        sideBarStyle.opacity ] =
+        sideBarStyle.opacity == "1" ?
+        ["","","",""] : ["hidden", "visible", "0", "1"];
+      }
+    </script>
+  </body>
+</html>
